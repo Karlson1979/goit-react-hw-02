@@ -1,12 +1,12 @@
 
 
-const Options = () => {
+const Options = ({updateFeedback}) => {
   return (
     <div>
-<button>Good</button>
-<button>Neutral</button>
+<button type="button" onClick={()=>updateFeedback('good')}>Good</button>
+<button type="button" onClick={()=>updateFeedback('neutral')}>Neutral</button>
 
-<button>Bad</button>        
+<button type="button" onClick={()=>updateFeedback('bad')}>Bad</button>        
             
         
     </div>
